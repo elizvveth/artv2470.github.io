@@ -1,10 +1,12 @@
+
 <!doctype html>
 
 <html>
 <head>
 
   <meta charset="UTF-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
   <title>Area Codes</title>
 
   <script type="text/javascript">
@@ -17,6 +19,8 @@
       var areaCode = document.getElementById("theCode").options[document.getElementById("theCode").selectedIndex].value;
       switch (parseInt(areaCode))
       {
+        case 0:
+          msg = "You did not select a city." 
         case 617:
           msg = "Boston's area code is " + areaCode;
     
@@ -28,7 +32,7 @@
     
         case 813:
           msg = "Tampa's area code is " + areaCode;
-
+         
       }
       
       alert(msg);
@@ -51,7 +55,7 @@ Select a City:
 
   <select name="theCode" id="theCode">
 
-    <option value="">-- Select a City --</option>
+    <option value="0">-- Select a City --</option>
     <option value="617">Boston</option>
     <option value="212">Manhattan</option>
     <option value="415">San Francisco</option>
