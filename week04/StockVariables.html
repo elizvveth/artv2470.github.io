@@ -1,31 +1,25 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<body>
+  
 <html lang = "en">
   <head>
     <meta charset = "UTF-8">
     <title>Stock Variables</title>
     <link rel = "stylesheet" href="myStyles.css">
-    <script>
-      /*<![CDATA[ */
-      //Most JavaScript code goes in the head section.
-      /* ]]> */
-      
-      let myVariable = 5;
-      
-    </script>
-    <!--[if lt IE 9]>
-<script src"dist/html5shiv.js"></script>
-<![endif]-->
-  </head>
-  
-  <body>
-<!-- Your HTML content goes inside the body tag, below this comment. -->
-   <script>
-      /* <![CDATA[ */
-      // But JavaScript code can go wherever it needs to be, including in the body.
-      /* ]]> */
-     
-     document.write("Myvariable is " + myVariable);
-    
-    </script>
-  </body>
+<p id="demo"></p>
+
+<script>
+
+var person = 'Raytheon : 24.95';
+var general = 'General Mills : 5.50';
+var company = 'AT&T : 17.67';
+var car = 'Ford : 5.75'; 
+var oil = 'Marathon Oil';
+
+document.getElementById("demo").innerHTML =
+person + "<br>" + general + "<br>" + company + "<br>" + car + "<br>" + oil ;
+</script>
+
+</body>
 </html>
